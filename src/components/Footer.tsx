@@ -20,7 +20,12 @@ const navigation = {
   ],
   partner: [
     { name: 'Sprunked', href: 'https://sprunked.dev/' },
-  ],
+    { name: 'AIStage', href: 'https://aistage.net' },
+    { name: 'Wutang Clan name generators', href: 'https://wutangclannamegenerators.com/' },
+    { name: 'MagicBox.Tools - AI Tools Directory', href: 'https://magicbox.tools/' },
+    { name: 'RightAI Tools Diresctory', href: 'https://right-ai.com/' },
+    { name: 'Resume Screener ai', href: 'https://resume-screening.com/' }, 
+  ],  
   legal: [
     { name: 'Terms of service', href: '#' },
     { name: 'Privacy policy', href: '#' },
