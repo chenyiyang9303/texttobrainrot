@@ -25,8 +25,8 @@ const navigation = {
     { name: 'RightAI Tools Diresctory', href: 'https://right-ai.com/' },
     { name: 'Resume Screener ai', href: 'https://resume-screening.com/' },
     { name: 'Wutang Clan name generators', href: 'https://wutangclannamegenerators.com/' },
-    { name: 'Top4 AI Tool', href: 'https://top4ai.com' },
     { name: 'ToolsFine', href: 'https://toolsfine.com' },
+    { name: 'Top4 AI Tool', href: 'https://top4ai.com' },
   ],  
   legal: [
     { name: 'Terms of service', href: '#' },
