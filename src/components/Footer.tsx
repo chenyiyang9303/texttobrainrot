@@ -19,25 +19,16 @@ const navigation = {
     { name: 'contact', href: 'mailto:support@text-to-brainrot.com' },
   ],
   partner: [
-    { name: 'Sprunked', href: 'https://sprunked.dev/', nofollow: true },
-    { name: 'AIStage', href: 'https://aistage.net', nofollow: true },
-    { name: 'MagicBox', href: 'https://magicbox.tools/', nofollow: true },
-    { name: 'RightAI', href: 'https://right-ai.com/', nofollow: true },
     { name: 'Resume Screener ai', href: 'https://resume-screening.com/', nofollow: false },
     { name: 'Wutang name generators', href: 'https://wutangclannamegenerators.com/', nofollow: false },
-    { name: 'ToolsFine', href: 'https://toolsfine.com', nofollow: true },
     { name: 'iuu AI', href: 'https://iuu.ai', nofollow: false },
     { name: '智鹭AI导航', href: 'https://www.aiheron.com', nofollow: false },
     { name: 'Top4 AI Tool', href: 'https://top4ai.com', nofollow: false },
-    { name: 'aibesttop', href: 'https://aibesttop.com', nofollow: true },
     { name: 'T0 AI', href: 'https://t0ai.com', nofollow: false },
-    { name: 'AI Findr', href: 'https://ai-findr.com', nofollow: true },
     { name: 'AListForAi', href: 'https://alistforai.com/', nofollow: false },
     { name: 'AI Just Works', href: 'https://aijustworks.com', nofollow: false },
-    { name: 'Artiverse', href: 'https://artiverse.app/ai/fluxproweb-com-image-to-prompt/', nofollow: true },
     { name: 'OkeiAi', href: 'https://okeiai.com/', nofollow: false },
-    { name: 'AITop10', href: 'https://aitop10.tools/', nofollow: true },
-    { name: 'SeekAIs', href: 'https://SeekAIs.com/', nofollow: true },
+    { name: 'More Partners', href: '/partner', nofollow: false },
   ],
   legal: [
     { name: 'Terms of service', href: '#' },
@@ -143,7 +134,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">Partner</h3>
-                <ul role="list" className="mt-6 grid grid-cols-2 gap-4">
+                <ul role="list" className="mt-6 space-y-4">
                   {navigation.partner.map((item) => (
                     <li key={item.name}>
                       <a
