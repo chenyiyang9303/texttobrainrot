@@ -19,6 +19,7 @@ const navigation = {
     { name: 'contact', href: 'mailto:support@text-to-brainrot.com' },
   ],
   partner: [
+    { name: 'Dang.ai', href: 'https://dang.ai/', nofollow: false, image: 'https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png', imageWidth: 150, imageHeight: 54 },
     { name: 'Resume Screener ai', href: 'https://resume-screening.com/', nofollow: false },
     { name: 'Wutang name generators', href: 'https://wutangclannamegenerators.com/', nofollow: false },
     { name: 'iuu AI', href: 'https://iuu.ai', nofollow: false },
@@ -28,6 +29,7 @@ const navigation = {
     { name: 'AListForAi', href: 'https://alistforai.com/', nofollow: false },
     { name: 'AI Just Works', href: 'https://aijustworks.com', nofollow: false },
     { name: 'OkeiAi', href: 'https://okeiai.com/', nofollow: false },
+    { name: 'ToolsFine', href: 'https://toolsfine.com' ,nofollow: false},
     { name: 'More Partners', href: '/partner', nofollow: false },
   ],
   legal: [
@@ -137,13 +139,25 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.partner.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        rel={item.nofollow ? "nofollow" : undefined}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      {item.image ? (
+                        <a href={item.href} target="_blank" className="inline-block">
+                          <Image
+                            src={item.image}
+                            alt={item.name}
+                            width={item.imageWidth}
+                            height={item.imageHeight}
+                            className="hover:opacity-80 transition-opacity"
+                          />
+                        </a>
+                      ) : (
+                        <a
+                          href={item.href}
+                          rel={item.nofollow ? "nofollow" : undefined}
+                          className="text-sm leading-6 text-gray-300 hover:text-white"
+                        >
+                          {item.name}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>

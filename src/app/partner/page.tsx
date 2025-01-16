@@ -9,7 +9,6 @@ const partnerLinks = [
   { name: 'AIStage', href: 'https://aistage.net' },
   { name: 'MagicBox', href: 'https://magicbox.tools/' },
   { name: 'RightAI', href: 'https://right-ai.com/' },
-  { name: 'ToolsFine', href: 'https://toolsfine.com' },
   { name: 'aibesttop', href: 'https://aibesttop.com' },
   { name: 'AI Findr', href: 'https://ai-findr.com' },
   { name: 'Artiverse', href: 'https://artiverse.app/ai/fluxproweb-com-image-to-prompt/' },
