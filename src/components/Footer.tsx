@@ -19,7 +19,7 @@ const navigation = {
     { name: 'contact', href: 'mailto:support@text-to-brainrot.com' },
   ],
   partner: [
-    { name: 'Dang.ai', href: 'https://dang.ai/', nofollow: false, image: 'https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png', imageWidth: 150, imageHeight: 54 },
+    { name: 'Dang.ai', href: 'https://dang.ai/', nofollow: false, image: 'https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png', imageWidth: 50, imageHeight: 18 },
     { name: 'Resume Screener ai', href: 'https://resume-screening.com/', nofollow: false },
     { name: 'Wutang name generators', href: 'https://wutangclannamegenerators.com/', nofollow: false },
     { name: 'iuu AI', href: 'https://iuu.ai', nofollow: false },
@@ -36,6 +36,8 @@ const navigation = {
     { name: 'AI Tools Show', href: 'https://aitools.show', nofollow: false },
     { name: 'AI Findr', href: 'https://ai-findr.com/', nofollow: false },
     { name: 'Artsiverse', href: 'https://artiverse.app', nofollow: false },
+    { name: 'AIAI', href: 'https://aiai.tools/', nofollow: false },
+    { name: 'HIAI Tools', href: 'https://hiaitools.com', nofollow: false },
     { name: 'More Partners', href: '/partner', nofollow: false },
   ],
   legal: [
@@ -141,34 +143,6 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Partner</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.partner.map((item) => (
-                    <li key={item.name}>
-                      {item.image ? (
-                        <a href={item.href} target="_blank" className="inline-block">
-                          <Image
-                            src={item.image}
-                            alt={item.name}
-                            width={item.imageWidth}
-                            height={item.imageHeight}
-                            className="hover:opacity-80 transition-opacity"
-                          />
-                        </a>
-                      ) : (
-                        <a
-                          href={item.href}
-                          rel={item.nofollow ? "nofollow" : undefined}
-                          className="text-sm leading-6 text-gray-300 hover:text-white"
-                        >
-                          {item.name}
-                        </a>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
@@ -181,6 +155,34 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="mt-8 text-xs text-gray-400">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+            {navigation.partner.map((item) => (
+              <div key={item.name}>
+                {item.image ? (
+                  <a href={item.href} target="_blank" className="inline-block">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={item.imageWidth}
+                      height={item.imageHeight}
+                      className="opacity-50 hover:opacity-80 transition-opacity"
+                    />
+                  </a>
+                ) : (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel={item.nofollow ? "nofollow" : undefined}
+                    className="text-gray-500 hover:text-gray-400"
+                  >
+                    {item.name}
+                  </a>
+                )}
+              </div>
+            ))}
           </div>
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
