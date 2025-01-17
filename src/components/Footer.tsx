@@ -30,6 +30,12 @@ const navigation = {
     { name: 'AI Just Works', href: 'https://aijustworks.com', nofollow: false },
     { name: 'OkeiAi', href: 'https://okeiai.com/', nofollow: false },
     { name: 'ToolsFine', href: 'https://toolsfine.com' ,nofollow: false},
+    { name: 'navai.me', href: 'https://navai.me', nofollow: false },
+    { name: 'AiToolGo', href: 'https://www.aitoolgo.com', nofollow: false },
+    { name: 'AIBestTop', href: 'https://aibesttop.com', nofollow: false },
+    { name: 'AI Tools Show', href: 'https://aitools.show', nofollow: false },
+    { name: 'AI Findr', href: 'https://ai-findr.com/', nofollow: false },
+    { name: 'Artsiverse', href: 'https://artiverse.app', nofollow: false },
     { name: 'More Partners', href: '/partner', nofollow: false },
   ],
   legal: [
